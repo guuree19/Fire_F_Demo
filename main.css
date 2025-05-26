@@ -1,0 +1,129 @@
+
+/* Outer container with 40% margins on left and right */
+#pageContainer {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/* Full-page layout and background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+}
+
+/* Wrapper for layout alignment */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Glass-style form container with bounce and shadow */
+.glass-form {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    animation: bounceIn 1s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Page title */
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Subtitle text */
+.subtitle {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Label styling */
+label {
+    width: 90%;
+    max-width: 400px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input + textarea styling */
+input, textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+}
+
+/* Submit button styling */
+button {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+/* Response message styling */
+#response {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #2e7d32;
+    text-align: center;
+}
+
+/* Bounce animation */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7) translateY(100px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.05) translateY(-10px);
+    }
+    80% {
+        transform: scale(0.95) translateY(5px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
